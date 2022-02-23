@@ -1,0 +1,14 @@
+<% products.forEach(product => { %>
+    <div>
+        <img src=" <%=  product.thumbnail%> 
+            ">
+        <h4>
+            <a href="/products/ <%= product.id %>  " <%=product.category %>>
+            </a>
+        </h4>
+        <p>
+            <%= product.description %>
+        </p>
+        <hr>
+    </div>
+    <% }) %>

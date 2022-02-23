@@ -1,0 +1,25 @@
+<%= title  %>
+
+    <!-- <% for( let index = 0; index < products.length; index++ ) { %>
+        <h1>
+            <%=products[index].title %>
+        </h1>
+        <p>
+            <%=products[index].description %>
+        </p>
+        <% } %> -->
+    <!--or use foreach  -->
+    <% products.forEach(product => { %>
+        <div>
+            <img src=" <%=  product.thumbnail%> 
+            ">
+            <h4>
+                <a href="/products/ <%= product.id %>  " <%=product.title %>>
+            </a>
+            </h4>
+            <p>
+                <%= product.description %>
+            </p>
+            <hr>
+        </div>
+        <% }) %>
